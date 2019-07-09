@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head> <title> StuCorner</title>
+</head>
+<body>
+<script>
+ var john = {
+  fullName:'john smith',
+  mass: 110,
+  height: 1.95,
+  calcbmi : function (){
+  this.bmi= this.mass/(this.height* this.height);
+  return this.bmi;
+  }
+  };
+  var mark = {
+  fullName :"mark jane",
+  mass1 : 78,
+  height1 : 1.69,
+  calcbmi : function (){
+  this.bmi= this.mass1/(this.height1*this.height1);
+  return this.bmi
+  }
+  };
+  john.calcbmi();
+  mark.calcbmi();
+ console.log(john,mark);
+  if(john.bmi> mark.bmi)
+  {
+   console.log(john.fullName +john.calcbmi() );
+  }
+  else if(mark.bmi> john.bmi)
+  {
+    console.log(mark.fullName +mark.calcbmi() );
+  }
+  else{
+    console.log("they have same bmi" );
+  }
+</script>
+</body>
+</html>

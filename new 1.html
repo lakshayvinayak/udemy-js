@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head> <title> StuCorner</title>
+</head>
+<body>
+<script>
+ function tipcalc(bill){
+  var finalamt=0;
+if(bill <= 50)
+{
+ finalamt=0.2;} 
+else if (bill>= 51 && bill<=200)
+{
+ finalamt=0.15;
+}
+else{
+ finalamt=0.1;
+}
+return bill* finalamt;
+}
+document.write(tipcalc(20));
+var bills =[124,48,268];
+var tips =[tipcalc(bills[0]),tipcalc(bills[1]),tipcalc(bills[2])];
+document.write(tips +"<br>");
+var amt =[tipcalc(bills[0])+bills[0],tipcalc(bills[1])+bills[1],tipcalc(bills[2])+bills[2]];
+document.write(amt);
+</script>
+ </body>
+</html>
